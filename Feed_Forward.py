@@ -1,3 +1,6 @@
+'''This helps in predicting no. of transaction when a customer has 'x' no. of children and
+ 'y' no. of bank accounts for four customers.'''
+
 import numpy as np
 
 #input_data = [#_of_children, #_of_accounts] for 4 customers
