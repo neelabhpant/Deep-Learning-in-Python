@@ -15,7 +15,7 @@ import math
 
 '''Cleaning Training Data'''
 
-train_data = pd.read_csv('Titanic_Data/train.csv')
+train_data = pd.read_csv('train.csv')
 train_survived = [i for i in train_data['Survived']]
 train_pclass = [i for i in train_data['Pclass']]
 train_age = [29.699118 if math.isnan(i) else i for i in train_data['Age']]
@@ -54,7 +54,7 @@ model.fit(train_predictors, train_target)
 
 '''Cleaning Testing Data'''
 
-test_data = pd.read_csv('Titanic_Data/test.csv')
+test_data = pd.read_csv('test.csv')
 test_pclass = [i for i in test_data['Pclass']]
 test_age = [29.699118 if math.isnan(i) else i for i in test_data['Age']]
 test_age_was_missing = [1 if math.isnan(i) else 0 for i in test_data['Age']]
