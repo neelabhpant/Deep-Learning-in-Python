@@ -46,7 +46,8 @@ train_target = to_categorical(train_df.survived)
 '''Setting up the model'''
 
 model = Sequential()
-model.add(Dense(32, activation='relu', input_shape=(train_n_cols,)))
+model.add(Dense(100, activation='relu', input_shape=(train_n_cols,)))
+model.add(Dense(100, activation='tanh'))
 model.add(Dense(2, activation='softmax'))
 model.compile(optimizer='sgd', loss='categorical_crossentropy', metrics=['accuracy'])
 model.fit(train_predictors, train_target)
