@@ -1,3 +1,10 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 10 12:00:48 2017
+@author: neelabhpant
+"""
+
 import numpy as np
 import os
 import scipy.misc
